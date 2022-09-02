@@ -1,7 +1,12 @@
 <template>
   <div>
-    Criado pela comunidade <a href="" target="_blank">open-source</a> ❤️
-    Extensão não oficial.
+    Criado pela comunidade
+    <a
+      href="https://github.com/juliorosseti/autocomplete-gamersclub-chrome-extension"
+      target="_blank"
+      >open-source</a
+    >
+    ❤️ Extensão não oficial.
   </div>
 </template>
 

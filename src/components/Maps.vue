@@ -79,7 +79,7 @@ export default {
 
   #grid {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 88px 88px 70px;
 
     label {
       color: white;

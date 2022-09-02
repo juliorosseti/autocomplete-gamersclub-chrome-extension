@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && npm run copyfiles",
+    "build": "vue-cli-service build && npm run copyfiles && npm run copyicons && webpack",
     "lint": "vue-cli-service lint",
-    "copyfiles": "copyfiles -f ./src/manifest.json ./src/background.js ./dist && webpack"
+    "copyfiles": "copyfiles -f ./src/manifest.json ./src/background.js ./dist && webpack",
+    "copyicons": "copyfiles -f ./src/assets/icons/* ./dist/icons/"
   },
   "dependencies": {
     "core-js": "^3.6.5",
