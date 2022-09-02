@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="" alt="App">
+  <img src="https://github.com/juliorosseti/autocomplete-gamersclub-chrome-extension/blob/main/src/assets/readme.gif?raw=true" alt="App">
 </p>
 
 ---
 
-Projeto desenvolvido para fins de estudo/teste
+@WIP
 
 O objetivo principal é disponibilizar para os jogadores ativos da GamersClub uma maneira mais ágil de aceitar as partidas que necessitam de um "complete".
 
