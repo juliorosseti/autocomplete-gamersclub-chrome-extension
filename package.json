@@ -1,11 +1,12 @@
 {
-  "name": "autocomplete-gamersclub-final",
-  "version": "0.1.0",
+  "name": "autocomplete-gamersclub",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build && npm run copyfiles",
+    "lint": "vue-cli-service lint",
+    "copyfiles": "copyfiles -f ./src/manifest.json ./src/background.js ./dist && webpack"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -16,9 +17,14 @@
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "babel-eslint": "^10.1.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "normalize.css": "^8.0.1",
+    "sass": "^1.54.8",
+    "sass-loader": "^10",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^4.10.0"
   },
   "eslintConfig": {
     "root": true,

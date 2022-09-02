@@ -1,0 +1,30 @@
+{
+  "name": "Auto complete - GamersClub",
+  "version": "1.0",
+  "description": "Aceite automático dos pedidos para completar as partidas",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://gamersclub.com.br/lobby"
+      ],
+      "js": [
+        "useCase.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://gamersclub.com.br/*"
+  ],
+  "manifest_version": 3
+}
