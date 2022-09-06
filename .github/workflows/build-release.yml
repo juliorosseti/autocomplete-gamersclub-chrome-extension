@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: static-content
-          path: ./bundle
+          path: ./dist
   release-project:
     name: Release Project
     runs-on: ubuntu-latest
