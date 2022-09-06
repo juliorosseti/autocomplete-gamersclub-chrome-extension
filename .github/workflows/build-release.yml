@@ -9,9 +9,6 @@ jobs:
   build-project:  
     name: Build Project
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: dist
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
@@ -22,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: static-content
-          path: dist/bundle
+          path: ./bundle
   release-project:
     name: Release Project
     runs-on: ubuntu-latest
