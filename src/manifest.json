@@ -1,6 +1,6 @@
 {
   "name": "AutoComplete - GamersClub",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Adiciona a possibilidade de aceite automático para completar partidas que estão incompletas na plataforma GamersClub.",
   "permissions": [
     "storage",
